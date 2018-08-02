@@ -17,8 +17,10 @@ class Index extends Controller
 
     public function collect()
     {
-        set_time_limit(3600);
-        $i=488;
+        set_time_limit(0);
+        ini_set("display_errors","On");
+        error_reporting(E_ALL);
+        $i=1662;
         $max_i=1763;
         $data=[];
         for($i;$i<=$max_i;$i++){
