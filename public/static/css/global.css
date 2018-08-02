@@ -552,3 +552,79 @@ body .fly-user-main{position: relative; min-height: 600px;}
     .site-mobile .fly-user-main>.layui-nav{left: 0;}
     .site-mobile .site-mobile-shade{content: ''; position: fixed; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0,0,0,.9); z-index: 999;}
 }
+
+/* box 文章盒整体风格 */
+
+.box {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 10px 60px 0 rgba(29, 29, 31, 0.09);
+    transition: all .12s ease-out;
+}
+
+.box:hover {
+    box-shadow: 0 0 36px #d8dde5;
+    opacity: 1;
+}
+
+
+/* 图文盒带标题和描述和作者 */
+
+.box .box-figure img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+}
+
+.box .box-body {
+    padding: 1.5rem;
+}
+.box .box-body > p {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.box .box-title {
+    color: #252629;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.box .box-title a {
+    color: #252629;
+}
+
+.box .box-title a:hover {
+    color: #768093;
+}
+
+.box .box-title+.box-body {
+    padding-top: 1rem;
+}
+
+.box .box-desc {
+    color: #999999;
+    font-size: 12px;
+    margin-top: 0.8rem;
+}
+
+.box .title-reference {
+    padding: 0.8rem 0 0 1.5rem;
+}
+
+.box .title-reference img {
+    display: inline-block;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.box .title-author {
+    padding-left: 0.5rem;
+}
+
+.box .title-reference+.box-body {
+    padding-top: 1rem;
+}

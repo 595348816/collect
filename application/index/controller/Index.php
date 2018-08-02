@@ -11,7 +11,7 @@ class Index extends Controller
     {
         $list=Db::name('doutu')
             ->order('id','desc')
-            ->paginate(68);
+            ->paginate(12);
         return $this->fetch('',compact('list'));
     }
 
